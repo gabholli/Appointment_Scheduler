@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreen">
+    <children>
+        <TableView fx:id="appointmentsTable" layoutX="63.0" layoutY="442.0" prefHeight="228.0" prefWidth="1047.0">
+            <columns>
+                <TableColumn fx:id="apptApptIdCol" prefWidth="103.19999551773071" text="Appointment ID"/>
+                <TableColumn fx:id="apptTitleCol" prefWidth="73.00001525878906" text="Title"/>
+                <TableColumn fx:id="apptDescriptionCol" prefWidth="92.40000915527344" text="Description"/>
+                <TableColumn fx:id="apptLocationCol" prefWidth="88.60000610351562" text="Location"/>
+                <TableColumn fx:id="apptContactCol" prefWidth="96.00003051757812" text="Contact"/>
+                <TableColumn minWidth="0.0" prefWidth="0.0" text="Column X"/>
+                <TableColumn fx:id="apptTypeCol" prefWidth="121.19992065429688" text="Type"/>
+                <TableColumn fx:id="apptStartDateTimeCol" prefWidth="136.79998779296875" text="Start Date And Time"/>
+                <TableColumn fx:id="apptEndDateTimeCol" prefWidth="143.20001220703125" text="End Date And Time"/>
+                <TableColumn fx:id="apptCustomerIdCol" prefWidth="114.4000244140625" text="Customer ID"/>
+                <TableColumn fx:id="apptUserIdCol" prefWidth="74.39990234375" text="User_ID"/>
+            </columns>
+        </TableView>
+        <TableView fx:id="recordsTable" layoutX="226.0" layoutY="127.0" prefHeight="193.0" prefWidth="722.0">
+            <columns>
+                <TableColumn fx:id="recordsUserIdCol" prefWidth="76.00000190734863" text="Customer ID"/>
+                <TableColumn fx:id="recordsCustNameCol" prefWidth="111.99999237060547" text="Customer Name"/>
+                <TableColumn fx:id="recordsAddressCol" prefWidth="119.20001220703125" text="Address"/>
+                <TableColumn fx:id="recordsPostalCol" prefWidth="75.00003051757812" text="Postal Code"/>
+                <TableColumn fx:id="recordsPhoneCol" prefWidth="114.39998168945311" text="Phone"/>
+                <TableColumn fx:id="recordsCountryCol" prefWidth="99.4000244140625" text="Country"/>
+                <TableColumn fx:id="recordsDivisionCol" prefWidth="123.19998779296873" text="State/Province"/>
+            </columns>
+        </TableView>
+        <Button fx:id="customerDeleteButton" layoutX="897.0" layoutY="341.0" mnemonicParsing="false"
+                onAction="#customerDeleteButtonAction" text="Delete"/>
+        <Button fx:id="customerUpdateButton" layoutX="833.0" layoutY="341.0" mnemonicParsing="false"
+                onAction="#customerUpdateButtonAction" text="Update"/>
+        <Button fx:id="customerAddButton" layoutX="770.0" layoutY="341.0" mnemonicParsing="false"
+                onAction="#customerAddButtonAction" text="Add"/>
+        <Button fx:id="apptDeleteButton" layoutX="1017.0" layoutY="691.0" mnemonicParsing="false"
+                onAction="#apptDeleteButtonAction" text="Delete"/>
+        <Button fx:id="apptUpdateButton" layoutX="953.0" layoutY="691.0" mnemonicParsing="false"
+                onAction="#apptUpdateButtonAction" text="Update"/>
+        <Button fx:id="apptAddButton" layoutX="890.0" layoutY="691.0" mnemonicParsing="false"
+                onAction="#apptAddButtonAction" text="Add"/>
+        <Label fx:id="recordsTopLabel" layoutX="564.0" layoutY="83.0" text="Records" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label layoutX="547.0" layoutY="391.0" text="Appointments">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Button fx:id="apptExitButton" layoutX="1078.0" layoutY="691.0" mnemonicParsing="false"
+                onAction="#apptExitButtonAction" text="Exit"/>
+        <Label layoutX="503.0" layoutY="695.0" text="Sort Table">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <RadioButton fx:id="apptMonthRadioButton" layoutX="668.0" layoutY="695.0" mnemonicParsing="false"
+                     onAction="#apptMonthRadioAction" text="By Month">
+            <toggleGroup>
+                <ToggleGroup fx:id="toggleGroup"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="apptWeekRadioButton" layoutX="769.0" layoutY="695.0" mnemonicParsing="false"
+                     onAction="#apptWeekRadioAction" text="By Week" toggleGroup="$toggleGroup"/>
+        <RadioButton fx:id="apptAllRadioButton" layoutX="597.0" layoutY="695.0" mnemonicParsing="false"
+                     onAction="#apptAllRadioAction" text="All" toggleGroup="$toggleGroup"/>
+        <Button fx:id="apptReportsButton" layoutX="379.0" layoutY="691.0" mnemonicParsing="false"
+                onAction="#apptReportsButtonAction" text="Reports"/>
+    </children>
+</AnchorPane>

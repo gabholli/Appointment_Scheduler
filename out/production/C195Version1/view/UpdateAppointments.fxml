@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateAppointments">
+    <children>
+        <Label layoutX="134.0" layoutY="43.0" text="Update Appointment Form">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Label>
+        <Label layoutX="65.0" layoutY="137.0" text="Title"/>
+        <Label layoutX="68.0" layoutY="168.0" text="Description"/>
+        <Label layoutX="68.0" layoutY="201.0" text="Location"/>
+        <Label layoutX="67.0" layoutY="272.0" text="Contact"/>
+        <TextField fx:id="updateApptTitleTextField" layoutX="185.0" layoutY="129.0"/>
+        <TextField fx:id="updateAppDescTextField" layoutX="185.0" layoutY="160.0"/>
+        <TextField fx:id="updateApptLocationTextField" layoutX="185.0" layoutY="193.0"/>
+        <Button fx:id="updateApptButton" layoutX="218.0" layoutY="487.0" mnemonicParsing="false"
+                onAction="#updateButtonAction" text="Update"/>
+        <Button fx:id="updateApptCancelButton" layoutX="282.0" layoutY="487.0" mnemonicParsing="false"
+                onAction="#addCancelButtonAction" text="Cancel"/>
+        <Label layoutX="65.0" layoutY="105.0" text="Appointment_ID"/>
+        <TextField fx:id="updateApptIdTextField" layoutX="185.0" layoutY="97.0"/>
+        <ComboBox fx:id="comboEnd" layoutX="183.0" layoutY="387.0" onAction="#initializeEnd" prefWidth="150.0"/>
+        <ComboBox fx:id="comboStart" layoutX="183.0" layoutY="355.0" onAction="#initializeStart" prefWidth="150.0"/>
+        <Label layoutX="67.0" layoutY="230.0" text="Type"/>
+        <Label layoutX="67.0" layoutY="359.0" text="Start Time"/>
+        <Label layoutX="67.0" layoutY="391.0" text="End Time"/>
+        <Label layoutX="67.0" layoutY="421.0" text="Customer_ID"/>
+        <TextField fx:id="updateApptTypeTextField" layoutX="184.0" layoutY="226.0"/>
+        <Label layoutX="67.0" layoutY="455.0" text="User_ID"/>
+        <ComboBox fx:id="comboContact" layoutX="183.0" layoutY="268.0" onAction="#initializeContact" prefWidth="150.0"/>
+        <ComboBox fx:id="comboCustomerId" layoutX="183.0" layoutY="417.0" prefWidth="150.0"/>
+        <ComboBox fx:id="comboUserId" layoutX="183.0" layoutY="451.0" prefWidth="150.0"/>
+        <DatePicker fx:id="updateDatePicker" layoutX="171.0" layoutY="309.0"/>
+        <Label layoutX="68.0" layoutY="313.0" text="Date"/>
+    </children>
+</AnchorPane>

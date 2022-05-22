@@ -1,0 +1,11 @@
+A successful login attempt occurred for Username: test on 2022-05-11 at 19:35:59
+A failed login attempt occurred for an unknown user on 2022-05-11 at 19:37:42
+A successful login attempt occurred for Username: test on 2022-05-11 at 20:15:13
+A successful login attempt occurred for Username: test on 2022-05-13 at 11:45:46
+A successful login attempt occurred for Username: test on 2022-05-13 at 11:49
+A successful login attempt occurred for Username: test on 2022-05-13 at 11:53:07
+A successful login attempt occurred for Username: test on 2022-05-13 at 11:54:49
+A successful login attempt occurred for Username: test on 2022-05-13 at 11:55:41
+A successful login attempt occurred for Username: test on 2022-05-13 at 11:57:39
+A successful login attempt occurred for Username: test on 2022-05-13 at 12:03:55
+A successful login attempt occurred for Username: test on 2022-05-15 at 22:01:07
