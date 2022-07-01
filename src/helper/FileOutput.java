@@ -46,7 +46,7 @@ public class FileOutput {
         LocalDate localDate = LocalDate.now();
         LocalTime localTime = LocalTime.now().truncatedTo(ChronoUnit.SECONDS);
 
-        if (userName.isBlank()) {
+         if (userName.isBlank()) {
             Scanner input = new Scanner("A failed login attempt occurred for an unknown user on " + localDate + " at " + localTime);
             FileWriter fWriter = new FileWriter(filename, true);
             PrintWriter outputFile = new PrintWriter(fWriter);

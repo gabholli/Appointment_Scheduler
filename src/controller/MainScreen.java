@@ -244,7 +244,7 @@ public class MainScreen implements Initializable {
                 Alert alert3 = new Alert(Alert.AlertType.INFORMATION);
                 alert3.setTitle("Customer Removed");
                 alert3.setHeaderText("Customer has been removed.");
-                alert3.setContentText("You have removed this customer");
+                alert3.setContentText("You have removed this customer.");
                 alert3.showAndWait();
 
                 Alert alert4 = new Alert(Alert.AlertType.INFORMATION);
