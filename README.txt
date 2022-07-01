@@ -56,9 +56,6 @@ Directions For Running The Program:
 
 - On Login Screen, type appropriate credentials to login
 
-   - Username is: test
-   - Password is: test
-
 - Click Sign In button to sign into application, or click Cancel to exit
 
 - Upon signing in, the main screen appears with two tables. The top table
