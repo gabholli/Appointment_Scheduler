@@ -57,7 +57,7 @@ public class LoginScreen implements Initializable {
     /**
      * Text field for entering username
      */
-    public TextField loginUserIdTxtField;
+    public TextField loginUserNameTxtField;
     /**
      * Text field for entering password
      */
@@ -114,7 +114,7 @@ public class LoginScreen implements Initializable {
      * @throws Exception For throwing exception
      */
     public void loginSignInAction(ActionEvent actionEvent) throws Exception {
-        String userName = loginUserIdTxtField.getText();
+        String userName = loginUserNameTxtField.getText();
         String password = loginPasswordTxtField.getText();
 
         JDBC jdbc = new JDBC();
@@ -134,6 +134,7 @@ public class LoginScreen implements Initializable {
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             Scene scene = new Scene(root, 1200, 800);
             stage.setScene(scene);
+            stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
             stage.centerOnScreen();
             stage.show();
         }

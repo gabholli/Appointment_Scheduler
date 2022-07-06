@@ -30,6 +30,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/LoginScreen.fxml")));
         stage.setTitle("Scheduling System");
         stage.setScene(new Scene(root, 600, 400));
+        stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
         stage.show();
     }
 

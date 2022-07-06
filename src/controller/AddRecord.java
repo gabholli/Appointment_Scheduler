@@ -110,6 +110,7 @@ public class AddRecord implements Initializable {
                     Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root, 1200, 800);
                     stage.setScene(scene);
+                    stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
                     stage.centerOnScreen();
                     stage.show();
 
@@ -141,6 +142,7 @@ public class AddRecord implements Initializable {
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             Scene scene = new Scene(root, 1200, 800);
             stage.setScene(scene);
+            stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
             stage.setTitle("Scheduling System");
             stage.centerOnScreen();
             stage.show();

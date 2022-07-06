@@ -1,5 +1,7 @@
 package helper;
 
+import javafx.scene.control.Alert;
+
 /**
  * Method used to allow for easier creation of alert dialogs
  */
@@ -17,6 +19,19 @@ public class Dialogs {
         alert.setHeaderText(null);
         alert.setContentText(message);
         alert.initOwner(null);
+        alert.showAndWait();
+    }
+
+    /**
+     * Method for generating a prompt when searching for customers
+     * in main screen fails
+     */
+    public static void failedSearchPrompt() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Nothing was found.");
+        alert.setHeaderText(null);
+        alert.setContentText("Search produced no results.");
+
         alert.showAndWait();
     }
 }

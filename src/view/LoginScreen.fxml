@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreen">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreen">
     <children>
-        <Label fx:id="userIdLabel" layoutX="129.0" layoutY="128.0" text="User ID"/>
-        <Label fx:id="passwordLabel" layoutX="129.0" layoutY="170.0" text="Password"/>
-        <TextField fx:id="loginUserIdTxtField" alignment="BASELINE_LEFT" layoutX="277.0" layoutY="124.0"/>
-        <TextField fx:id="loginPasswordTxtField" alignment="BASELINE_LEFT" layoutX="277.0" layoutY="166.0"/>
-        <Label fx:id="zoneIDLabel" layoutX="129.0" layoutY="205.0" text="Zone ID"/>
-        <Button fx:id="loginSignInButton" alignment="CENTER_RIGHT" layoutX="201.0" layoutY="250.0"
-                mnemonicParsing="false" onAction="#loginSignInAction" text="Sign In"/>
-        <Label fx:id="zoneIdDisplayLabel" alignment="CENTER" layoutX="280.0" layoutY="205.0" prefHeight="18.0"
-               prefWidth="135.0"/>
-        <Button fx:id="loginCancelButton" alignment="CENTER_RIGHT" layoutX="301.0" layoutY="250.0"
-                mnemonicParsing="false" onAction="#loginCancelAction" text="Cancel"/>
+        <Label fx:id="userIdLabel" layoutX="129.0" layoutY="128.0" text="User ID" />
+        <Label fx:id="passwordLabel" layoutX="129.0" layoutY="170.0" text="Password" />
+        <TextField fx:id="loginUserNameTxtField" alignment="BASELINE_LEFT" layoutX="277.0" layoutY="124.0" />
+        <TextField fx:id="loginPasswordTxtField" alignment="BASELINE_LEFT" layoutX="277.0" layoutY="166.0" />
+        <Label fx:id="zoneIDLabel" layoutX="129.0" layoutY="205.0" text="Zone ID" />
+        <Button fx:id="loginSignInButton" alignment="CENTER_RIGHT" layoutX="201.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginSignInAction" text="Sign In" />
+        <Label fx:id="zoneIdDisplayLabel" layoutX="280.0" layoutY="205.0" prefHeight="18.0" prefWidth="160.0" />
+        <Button fx:id="loginCancelButton" alignment="CENTER_RIGHT" layoutX="337.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginCancelAction" text="Cancel" />
         <Label fx:id="loginTopLabel" alignment="CENTER" layoutX="231.0" layoutY="53.0" text="Scheduling System">
             <font>
-                <Font name="System Bold" size="12.0"/>
+                <Font name="System Bold" size="12.0" />
             </font>
         </Label>
     </children>

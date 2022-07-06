@@ -3,6 +3,9 @@ package controller;
 
 import database.AppointmentDB;
 import database.CustomerDB;
+import helper.Dialogs;
+import helper.Search;
+import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +20,7 @@ import model.Appointment;
 import model.Customer;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
@@ -158,6 +162,11 @@ public class MainScreen implements Initializable {
      * Button for going to reports screen
      */
     public Button apptReportsButton;
+    /**
+     * Text Field for search for customers in records table
+     */
+    public TextField mainCustomerSearchField;
+    public TextField mainApptSearchField;
 
     /**
      * Method for initializing main screen
@@ -282,6 +291,7 @@ public class MainScreen implements Initializable {
 
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(tableViewScene);
+            stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
             stage.centerOnScreen();
             stage.show();
         }
@@ -298,6 +308,7 @@ public class MainScreen implements Initializable {
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root, 400, 400);
         stage.setScene(scene);
+        stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
         stage.setTitle("Add Customer Information");
         stage.centerOnScreen();
         stage.show();
@@ -360,6 +371,7 @@ public class MainScreen implements Initializable {
 
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(tableViewScene);
+            stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
             stage.centerOnScreen();
             stage.show();
         }
@@ -376,6 +388,7 @@ public class MainScreen implements Initializable {
         Scene scene = new Scene(root, 400, 600);
         stage.setScene(scene);
         stage.setTitle("Add Appointment Information");
+        stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
         stage.centerOnScreen();
         stage.show();
     }
@@ -465,11 +478,50 @@ public class MainScreen implements Initializable {
     public void apptReportsButtonAction(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/View/Reports.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root, 1200, 800);
+        Scene scene = new Scene(root, 800, 700);
         stage.setScene(scene);
         stage.setTitle("Reports");
         stage.centerOnScreen();
+        stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
         stage.show();
 
+    }
+
+    /**
+     * Method used to handling searching for customers in corresponding text field
+     * @param actionEvent Variable for action event
+     */
+    public void mainCustomerSearchAction(ActionEvent actionEvent) throws Exception {
+        String q = mainCustomerSearchField.getText();
+
+        ObservableList<Customer> customerName = Search.lookupCustomer(q);
+        if (customerName.size() == 0) {
+            try {
+                Customer c = (Customer) Search.lookupCustomer(q);
+                customerName.add(c);
+            } catch (ClassCastException e) {
+                Dialogs.failedSearchPrompt();
+            }
+        }
+        recordsTable.setItems(customerName);
+        mainCustomerSearchField.setText(Integer.toString(customerName.size()));
+        mainCustomerSearchField.setText((""));
+    }
+
+    public void mainApptSearchAction(ActionEvent actionEvent) throws Exception {
+        String q = mainApptSearchField.getText();
+
+        ObservableList<Appointment> appointmentId = Search.lookupAppointmentID(Integer.parseInt(q));
+        if (appointmentId.size() == 0) {
+            try {
+                Appointment a = (Appointment) Search.lookupAppointmentID(Integer.parseInt(q));
+                appointmentId.add(a);
+            } catch (ClassCastException e) {
+                Dialogs.failedSearchPrompt();
+            }
+        }
+        appointmentsTable.setItems(appointmentId);
+        mainCustomerSearchField.setText(Integer.toString(appointmentId.size()));
+        mainCustomerSearchField.setText((""));
     }
 }
