@@ -20,6 +20,7 @@ public class Search {
         }
         return null;
     }
+
     public static ObservableList<Customer> lookupCustomer(String customerName) throws Exception {
 
         ObservableList<Customer> nameCustomer = FXCollections.observableArrayList();
