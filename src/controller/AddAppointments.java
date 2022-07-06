@@ -2,6 +2,7 @@ package controller;
 
 import database.AppointmentDB;
 import database.CustomerDB;
+import helper.InputValidation;
 import helper.ListManager;
 import helper.Time;
 import javafx.event.ActionEvent;
@@ -103,6 +104,12 @@ public class AddAppointments implements Initializable {
         comboUserId.setItems(ListManager.allUsers);
         comboStart.setItems(ListManager.allStartTimes);
         comboEnd.setItems(ListManager.allEndTimes);
+
+        InputValidation.textFieldStringValidation(addApptTitleTextField);
+        InputValidation.textFieldStringValidation(addAppDescTextField);
+        InputValidation.textFieldStringValidation(addApptLocationTextField);
+        InputValidation.textFieldStringValidation(addApptTypeTextField);
+
     }
 
     /**

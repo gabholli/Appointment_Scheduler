@@ -15,7 +15,7 @@ public class InputValidation {
     public static void textFieldStringValidation(TextField tf) {
         tf.textProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue.matches("[a-zA-Z0-9]")) return;
-            tf.setText(newValue.replaceAll("[^a-zA-Z0-9]", ""));
+            tf.setText(newValue.replaceAll("[^-a-zA-Z0-9]", ""));
         });
     }
 }

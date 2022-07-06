@@ -2,6 +2,7 @@ package controller;
 
 import database.AppointmentDB;
 import database.CustomerDB;
+import helper.InputValidation;
 import helper.ListManager;
 import helper.Time;
 import javafx.event.ActionEvent;
@@ -98,6 +99,11 @@ public class UpdateAppointments implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         updateApptIdTextField.setDisable(true);
         Time.loadTime();
+
+        InputValidation.textFieldStringValidation(updateApptTitleTextField);
+        InputValidation.textFieldStringValidation(updateAppDescTextField);
+        InputValidation.textFieldStringValidation(updateApptLocationTextField);
+        InputValidation.textFieldStringValidation(updateApptTypeTextField);
     }
 
     /**
