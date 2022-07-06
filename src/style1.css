@@ -1,0 +1,23 @@
+.root {
+	-fx-background-color:"lightblue";
+}
+
+.label {
+	-fx-font-family:"Lucida Console";
+	-fx-text-fill:"black";
+}
+
+.button {
+	-fx-background-color:"gray";
+	-fx-font-family:"Courier";
+}
+
+.table-column {
+	-fx-font-family:"Lucida Console";
+	-fx-font-size: 10;
+}
+
+#loginTopLabel {
+
+}
+
