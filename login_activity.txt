@@ -147,3 +147,11 @@ A successful login attempt occurred for Username: test on 2022-07-06 at 16:10:20
 A successful login attempt occurred for Username: test on 2022-07-06 at 16:13:02
 A successful login attempt occurred for Username: test on 2022-07-06 at 16:19:15
 A successful login attempt occurred for Username: test on 2022-07-06 at 16:21:18
+A failed login attempt occurred for an unknown user on 2022-07-06 at 16:38:47
+A failed login attempt occurred for Username: test on 2022-07-06 at 16:38:51
+A successful login attempt occurred for Username: test on 2022-07-06 at 16:38:55
+A successful login attempt occurred for Username: test on 2022-07-06 at 16:41:40
+A failed login attempt occurred for Username: test on 2022-07-06 at 16:47:09
+A successful login attempt occurred for Username: test on 2022-07-06 at 16:51:36
+A successful login attempt occurred for Username: test on 2022-07-06 at 16:52:11
+A successful login attempt occurred for Username: test on 2022-07-06 at 16:52:51

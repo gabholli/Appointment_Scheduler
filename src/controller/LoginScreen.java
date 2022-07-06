@@ -4,6 +4,7 @@ package controller;
 import database.AppointmentDB;
 import helper.Dialogs;
 import helper.FileOutput;
+import helper.InputValidation;
 import helper.JDBC;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -79,6 +80,7 @@ public class LoginScreen implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         translation();
     }
 
