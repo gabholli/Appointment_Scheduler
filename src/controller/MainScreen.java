@@ -281,7 +281,7 @@ public class MainScreen implements Initializable {
             alert.showAndWait();
         } else {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation((getClass().getResource("/View/UpdateRecord.fxml")));
+            loader.setLocation((getClass().getResource("/view/UpdateRecord.fxml")));
             Parent tableViewParent = loader.load();
 
             Scene tableViewScene = new Scene(tableViewParent);
@@ -304,7 +304,7 @@ public class MainScreen implements Initializable {
      * @throws IOException For throwing IOException
      */
     public void customerAddButtonAction(ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/View/AddRecord.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/AddRecord.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root, 400, 400);
         stage.setScene(scene);
@@ -361,7 +361,7 @@ public class MainScreen implements Initializable {
             alert.showAndWait();
         } else {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation((getClass().getResource("/View/UpdateAppointments.fxml")));
+            loader.setLocation((getClass().getResource("/view/UpdateAppointments.fxml")));
             Parent tableViewParent = loader.load();
 
             Scene tableViewScene = new Scene(tableViewParent);
@@ -383,7 +383,7 @@ public class MainScreen implements Initializable {
      * @throws IOException For throwing IOException
      */
     public void apptAddButtonAction(ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/View/AddAppointments.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/AddAppointments.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root, 400, 600);
         stage.setScene(scene);
@@ -476,7 +476,7 @@ public class MainScreen implements Initializable {
      * @throws IOException For throwing IOException
      */
     public void apptReportsButtonAction(ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/View/Reports.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/Reports.fxml")));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root, 800, 700);
         stage.setScene(scene);
