@@ -1,6 +1,7 @@
 package controller;
 
 import database.CustomerDB;
+import helper.InputValidation;
 import helper.ListManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -74,6 +75,11 @@ public class AddRecord implements Initializable {
         addIdTextField.setDisable(true);
         addIdTextField.setPromptText("Auto Gen - Disabled");
         comboCountry.setItems(ListManager.allCountries);
+
+        InputValidation.textNumberValidation(addPhoneTextField);
+        InputValidation.textFieldStringValidation(addNameTextField);
+        InputValidation.textFieldStringValidation(addAddressTextField);
+        InputValidation.textNumberValidation(addPostalCodeTextField);
     }
 
     /**

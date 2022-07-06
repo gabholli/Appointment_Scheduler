@@ -1,6 +1,7 @@
 package controller;
 
 import database.CustomerDB;
+import helper.InputValidation;
 import helper.ListManager;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,6 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import model.Appointment;
 import model.Country;
 import model.Customer;
 import model.Division;
@@ -22,6 +24,7 @@ import java.sql.SQLException;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.ResourceBundle;
+import java.util.function.UnaryOperator;
 
 /**
  * Class for updating customer record form
@@ -77,7 +80,12 @@ public class UpdateRecord implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         IdTextField.setDisable(true);
+        InputValidation.textNumberValidation(phoneTextField);
+        InputValidation.textFieldStringValidation(nameTextField);
+        InputValidation.textFieldStringValidation(addressTextField);
+        InputValidation.textNumberValidation(postalCodeTextField);
     }
 
     /**
