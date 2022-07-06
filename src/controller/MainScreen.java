@@ -497,7 +497,8 @@ public class MainScreen implements Initializable {
         ObservableList<Customer> customerName = Search.lookupCustomer(q);
         if (customerName.size() == 0) {
             try {
-                Customer c = (Customer) Search.lookupCustomer(q);
+                int id = Integer.parseInt(q);
+                Customer c = Search.lookupCustomer(id);
                 customerName.add(c);
             } catch (ClassCastException e) {
                 Dialogs.failedSearchPrompt();
@@ -511,12 +512,13 @@ public class MainScreen implements Initializable {
     public void mainApptSearchAction(ActionEvent actionEvent) throws Exception {
         String q = mainApptSearchField.getText();
 
-        ObservableList<Appointment> appointmentId = Search.lookupAppointmentID(Integer.parseInt(q));
+        ObservableList<Appointment> appointmentId = Search.lookupAppointment(q);
         if (appointmentId.size() == 0) {
             try {
-                Appointment a = (Appointment) Search.lookupAppointmentID(Integer.parseInt(q));
+                int id = Integer.parseInt(q);
+                Appointment a = Search.lookupAppointment(id);
                 appointmentId.add(a);
-            } catch (ClassCastException e) {
+            } catch (ClassCastException | NumberFormatException | InvocationTargetException e) {
                 Dialogs.failedSearchPrompt();
             }
         }

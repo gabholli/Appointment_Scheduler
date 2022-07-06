@@ -10,6 +10,16 @@ import model.Customer;
 import java.util.Objects;
 
 public class Search {
+
+    public static Customer lookupCustomer(int customerID) throws Exception {
+
+        for (Customer c : CustomerDB.getAllCustomers()) {
+            if (c.getCustomerId() == customerID) {
+                return c;
+            }
+        }
+        return null;
+    }
     public static ObservableList<Customer> lookupCustomer(String customerName) throws Exception {
 
         ObservableList<Customer> nameCustomer = FXCollections.observableArrayList();
@@ -29,18 +39,31 @@ public class Search {
         return nameCustomer;
     }
 
-    public static ObservableList<Appointment> lookupAppointmentID(int appointmentId) throws Exception {
+    public static Appointment lookupAppointment(int appointmentId) throws Exception {
 
-        ObservableList<Appointment> idAppointment = FXCollections.observableArrayList();
-
-        ObservableList<Appointment> allAppointmentId = AppointmentDB.getAllAppointments();
-
-        for (Appointment a : allAppointmentId) {
+        for (Appointment a : AppointmentDB.getAllAppointments()) {
             if (a.getApptId() == appointmentId) {
-                idAppointment.add(a);
+                return a;
+            }
+        }
+        return null;
+    }
+
+    public static ObservableList<Appointment> lookupAppointment(String appointmentTitle) throws Exception {
+
+        ObservableList<Appointment> titleAppointment = FXCollections.observableArrayList();
+
+        ObservableList<Appointment> allAppointments = AppointmentDB.getAllAppointments();
+
+        for (Appointment a : allAppointments) {
+            if (a.getTitle().contains(appointmentTitle)) {
+                titleAppointment.add(a);
             }
         }
 
-        return idAppointment;
+        if (Objects.equals(appointmentTitle, "")) {
+            Dialogs.failedSearchPrompt();
+        }
+        return titleAppointment;
     }
 }

@@ -17,7 +17,7 @@
 	-fx-font-size: 10;
 }
 
-#loginTopLabel {
-
+#loginTitle {
+	-fx-font-family:"Courier New"
 }
 

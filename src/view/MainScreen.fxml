@@ -73,7 +73,7 @@
         <RadioButton fx:id="apptWeekRadioButton" layoutX="769.0" layoutY="695.0" mnemonicParsing="false" onAction="#apptWeekRadioAction" text="By Week" toggleGroup="$toggleGroup" />
         <RadioButton fx:id="apptAllRadioButton" layoutX="597.0" layoutY="695.0" mnemonicParsing="false" onAction="#apptAllRadioAction" text="All" toggleGroup="$toggleGroup" />
         <Button fx:id="apptReportsButton" layoutX="351.0" layoutY="691.0" mnemonicParsing="false" onAction="#apptReportsButtonAction" text="Go To Reports Screen" />
-        <TextField fx:id="mainCustomerSearchField" layoutX="154.0" layoutY="137.0" onAction="#mainCustomerSearchAction" prefHeight="26.0" prefWidth="167.0" promptText="Search by Customer Name" />
-        <TextField fx:id="mainApptSearchField" layoutX="924.0" layoutY="691.0" onAction="#mainApptSearchAction" prefHeight="26.0" prefWidth="167.0" promptText="Search By Appointment ID" />
+        <TextField fx:id="mainCustomerSearchField" layoutX="141.0" layoutY="137.0" onAction="#mainCustomerSearchAction" prefHeight="26.0" prefWidth="192.0" promptText="Search By Customer Name Or ID" />
+        <TextField fx:id="mainApptSearchField" layoutX="885.0" layoutY="691.0" onAction="#mainApptSearchAction" prefHeight="26.0" prefWidth="206.0" promptText="Search By Appointment Title Or ID" />
     </children>
 </AnchorPane>
