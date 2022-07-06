@@ -90,7 +90,8 @@ public class UpdateAppointments implements Initializable {
 
     /**
      * Method used to initialize update appointment form
-     * @param url Variable for url
+     *
+     * @param url            Variable for url
      * @param resourceBundle Variable for resource bundle
      */
     @Override
@@ -101,6 +102,7 @@ public class UpdateAppointments implements Initializable {
 
     /**
      * Method used to receive data from main screen
+     *
      * @param appointment Parameter used to retrieve appointment data from main screen
      * @throws Exception For throwing Exception
      */
@@ -137,6 +139,7 @@ public class UpdateAppointments implements Initializable {
 
     /**
      * Method used to handle using cancel button in update appointment form
+     *
      * @param actionEvent
      * @throws IOException
      */
@@ -161,9 +164,10 @@ public class UpdateAppointments implements Initializable {
 
     /**
      * Method for handling using update button in update appointment form
+     *
      * @param actionEvent Parameter for action event
      * @throws SQLException For throwing SQLException
-     * @throws IOException For throwing IOException
+     * @throws IOException  For throwing IOException
      */
     public void updateButtonAction(ActionEvent actionEvent) throws SQLException, IOException {
         try {

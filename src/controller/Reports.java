@@ -93,7 +93,8 @@ public class Reports implements Initializable {
 
     /**
      * Method used to initialize reports screen
-     * @param url Variable for url
+     *
+     * @param url            Variable for url
      * @param resourceBundle Variable for resource bundle
      */
     @Override
@@ -125,6 +126,7 @@ public class Reports implements Initializable {
      * Lambda expression #5: Used to filter contact table results if Anika Costa is selected
      * Lambda expression #6: Used to filter contact table results if Daniel Garcia is selected
      * Lambda expression #7: Used to filter contact table results if Li Lee is selected
+     *
      * @throws Exception For throwing Exception
      */
     public void selectContactAction() throws Exception {
@@ -144,6 +146,7 @@ public class Reports implements Initializable {
 
     /**
      * Method used to handle exit button in reports screen
+     *
      * @param actionEvent Variable for action event
      * @throws IOException Variable for IOException
      */
@@ -180,6 +183,7 @@ public class Reports implements Initializable {
 
     /**
      * Method used to handle using type combobox in second report
+     *
      * @throws SQLException For throwing SQLException
      */
     public void selectTypeComboAction() throws SQLException {

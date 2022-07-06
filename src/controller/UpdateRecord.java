@@ -71,7 +71,8 @@ public class UpdateRecord implements Initializable {
 
     /**
      * Method used to initialize update customer record form
-     * @param url Variable for url
+     *
+     * @param url            Variable for url
      * @param resourceBundle Variable for resource bundle
      */
     @Override
@@ -81,6 +82,7 @@ public class UpdateRecord implements Initializable {
 
     /**
      * Method used to receive data from main screen to update customer record form
+     *
      * @param customer Parameter used for receiving customer data
      */
     public void receiveDataToUpdateRecord(Customer customer) {
@@ -97,6 +99,7 @@ public class UpdateRecord implements Initializable {
 
     /**
      * Method used to handle using cancel button in update customer record form
+     *
      * @param actionEvent Parameter for action event
      * @throws IOException For throwing IOException
      */
@@ -121,8 +124,9 @@ public class UpdateRecord implements Initializable {
 
     /**
      * Method used to handling using update button in update customer record form
+     *
      * @param actionEvent Parameter for action event
-     * @throws IOException For throwing IOException
+     * @throws IOException  For throwing IOException
      * @throws SQLException For throwing SQLException
      */
     public void updateButtonAction(ActionEvent actionEvent) throws IOException, SQLException {
@@ -133,7 +137,7 @@ public class UpdateRecord implements Initializable {
         String postalCode = postalCodeTextField.getText();
         String phone = phoneTextField.getText();
         int divisionId = comboDivision.getValue().getDivisionId();
-        
+
         if (IdTextField.getText().isBlank() || nameTextField.getText().isBlank() || addressTextField.getText().isBlank()
                 || postalCodeTextField.getText().isBlank() || phoneTextField.getText().isBlank()
                 || comboCountry.getValue() == null || comboDivision.getValue() == null) {

@@ -170,7 +170,8 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for initializing main screen
-     * @param url Variable for url
+     *
+     * @param url            Variable for url
      * @param resourceBundle Variable for resource bundle
      */
     @Override
@@ -226,6 +227,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using customer delete button
+     *
      * @throws Exception For throwing exception
      */
     public void customerDeleteButtonAction() throws Exception {
@@ -268,6 +270,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using customer update button
+     *
      * @param actionEvent Variable for action event
      * @throws IOException For throwing IOException
      */
@@ -300,6 +303,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using add customer button
+     *
      * @param actionEvent Variable for action event
      * @throws IOException For throwing IOException
      */
@@ -316,6 +320,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using delete appointment button
+     *
      * @throws SQLException For throwing SQLException
      */
     public void apptDeleteButtonAction() throws SQLException {
@@ -348,6 +353,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using update appointment button
+     *
      * @param actionEvent Variable for action event
      * @throws Exception For throwing Exception
      */
@@ -379,6 +385,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling add appointment button
+     *
      * @param actionEvent Variable for action event
      * @throws IOException For throwing IOException
      */
@@ -395,6 +402,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using month radio button
+     *
      * @throws Exception For throwing Exception
      */
     public void apptMonthRadioAction() throws Exception {
@@ -404,6 +412,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using week radio button
+     *
      * @throws Exception For throwing Exception
      */
     public void apptWeekRadioAction() throws Exception {
@@ -413,6 +422,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method for handling using all radio button
+     *
      * @throws Exception For throwing Exception
      */
     public void apptAllRadioAction() throws Exception {
@@ -427,6 +437,7 @@ public class MainScreen implements Initializable {
      * by ensuring beginning time of filtering range is after the current system time
      * Lambda expression #2: Used to set second condition for filtering appointments table by month,
      * by ensuring ending time of filtering range is one month after the current system time
+     *
      * @throws Exception For throwing Exception
      */
     public void filterByMonth() throws Exception {
@@ -446,6 +457,7 @@ public class MainScreen implements Initializable {
      * by ensuring beginning time of filtering range is after the current system time
      * Lambda expression #4: Used to set second condition for filtering appointments table by week,
      * by ensuring ending time of filtering range is one week after the current system time
+     *
      * @throws Exception For throwing Exception
      */
     public void filterByWeek() throws Exception {
@@ -461,6 +473,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method used to show all appointments in appointments table
+     *
      * @throws Exception For throwing Exception
      */
     public void filterAll() throws Exception {
@@ -472,6 +485,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method used for handling using reports button
+     *
      * @param actionEvent Variable for action event
      * @throws IOException For throwing IOException
      */
@@ -489,6 +503,7 @@ public class MainScreen implements Initializable {
 
     /**
      * Method used to handling searching for customers in corresponding text field
+     *
      * @param actionEvent Variable for action event
      */
     public void mainCustomerSearchAction(ActionEvent actionEvent) throws Exception {

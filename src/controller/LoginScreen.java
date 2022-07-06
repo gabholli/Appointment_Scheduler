@@ -73,7 +73,8 @@ public class LoginScreen implements Initializable {
 
     /**
      * Method for initializing login screen
-     * @param url Variable for url
+     *
+     * @param url            Variable for url
      * @param resourceBundle Variable for ResourceBundle
      */
     @Override
@@ -93,6 +94,7 @@ public class LoginScreen implements Initializable {
 
     /**
      * Method for loading proper resource bundle entries
+     *
      * @param language Parameter for selecting language
      */
     private void loadLanguage(String language) {
@@ -110,6 +112,7 @@ public class LoginScreen implements Initializable {
 
     /**
      * Method for handling using sign in button
+     *
      * @param actionEvent Variable for action event
      * @throws Exception For throwing exception
      */

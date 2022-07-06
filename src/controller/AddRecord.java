@@ -65,7 +65,8 @@ public class AddRecord implements Initializable {
 
     /**
      * Initializing method for adding customer form
-     * @param url Variable for url
+     *
+     * @param url            Variable for url
      * @param resourceBundle Variable for ResourceBundle
      */
     @Override
@@ -77,8 +78,9 @@ public class AddRecord implements Initializable {
 
     /**
      * Method for handling add button in add customer form
+     *
      * @param actionEvent Variable for action event
-     * @throws IOException for throwing IOException
+     * @throws IOException  for throwing IOException
      * @throws SQLException for throwing SQLException
      */
     public void addButtonAction(ActionEvent actionEvent) throws IOException, SQLException {
@@ -127,6 +129,7 @@ public class AddRecord implements Initializable {
 
     /**
      * Method for handling cancel button in add customer form
+     *
      * @param actionEvent Variable for action event
      * @throws IOException For throwing IOException
      */
