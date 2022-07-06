@@ -133,7 +133,7 @@ public class UpdateRecord implements Initializable {
         String postalCode = postalCodeTextField.getText();
         String phone = phoneTextField.getText();
         int divisionId = comboDivision.getValue().getDivisionId();
-
+        
         if (IdTextField.getText().isBlank() || nameTextField.getText().isBlank() || addressTextField.getText().isBlank()
                 || postalCodeTextField.getText().isBlank() || phoneTextField.getText().isBlank()
                 || comboCountry.getValue() == null || comboDivision.getValue() == null) {

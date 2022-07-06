@@ -1,5 +1,5 @@
 .root {
-	-fx-background-color:"lightblue";
+	-fx-background-color:"deepskyblue";
 }
 
 .label {
@@ -9,7 +9,7 @@
 
 .button {
 	-fx-background-color:"gray";
-	-fx-font-family:"Courier";
+	-fx-font-family:"Times New Roman";
 }
 
 .table-column {
@@ -18,6 +18,6 @@
 }
 
 #loginTitle {
-	-fx-font-family:"Courier New"
+	/*-fx-font-family:"Courier New"*/
 }
 
