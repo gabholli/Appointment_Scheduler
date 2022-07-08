@@ -16,10 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import model.Appointment;
-import model.BusinessCustomer;
-import model.Customer;
-import model.MarketingCustomer;
+import model.*;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -228,17 +225,17 @@ public class MainScreen implements Initializable {
      */
     public void receiveFromLogin(int i) {
 
-        Customer customer = new Customer();
-        Customer businessCustomer = new BusinessCustomer();
-        Customer marketingCustomer = new MarketingCustomer();
+        User userObject = new User();
+        User businessUser = new BusinessUser();
+        User marketingUser = new MarketingUser();
 
         if (i == 0) {
-            mainTypeLabel.setText(marketingCustomer.message());
+            mainTypeLabel.setText(marketingUser.message());
         }
         else if (i == 1) {
-            mainTypeLabel.setText(businessCustomer.message());
+            mainTypeLabel.setText(businessUser.message());
         } else {
-            mainTypeLabel.setText(customer.message());
+            mainTypeLabel.setText(userObject.message());
         }
 
     }

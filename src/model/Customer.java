@@ -235,8 +235,6 @@ public class Customer {
         return String.valueOf(customerId);
     }
 
-    public String message() {
-        return "No Customer Type Selected";
-    }
+
 
 }

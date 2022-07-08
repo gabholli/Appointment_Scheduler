@@ -28,7 +28,7 @@
                 <TableColumn fx:id="apptUserIdCol" prefWidth="74.39990234375" text="User_ID" />
             </columns>
         </TableView>
-        <TableView fx:id="recordsTable" layoutX="351.0" layoutY="127.0" prefHeight="194.0" prefWidth="759.0">
+        <TableView fx:id="recordsTable" layoutX="252.0" layoutY="124.0" prefHeight="194.0" prefWidth="858.0">
             <columns>
                 <TableColumn fx:id="recordsUserIdCol" prefWidth="90.39999389648438" text="Customer ID" />
                 <TableColumn fx:id="recordsCustNameCol" prefWidth="103.20001220703125" text="Customer Name" />
@@ -37,11 +37,12 @@
                 <TableColumn fx:id="recordsPhoneCol" prefWidth="99.199951171875" text="Phone" />
                 <TableColumn fx:id="recordsCountryCol" prefWidth="101.59991455078125" text="Country" />
                 <TableColumn fx:id="recordsDivisionCol" prefWidth="142.39995117187505" text="State/Province" />
+            <TableColumn fx:id="recordsTypeCol" prefWidth="97.60007324218748" text="Type" />
             </columns>
         </TableView>
-        <Button fx:id="customerDeleteButton" layoutX="161.0" layoutY="267.0" mnemonicParsing="false" onAction="#customerDeleteButtonAction" text="Delete Selected Customer" />
-        <Button fx:id="customerUpdateButton" layoutX="158.0" layoutY="224.0" mnemonicParsing="false" onAction="#customerUpdateButtonAction" text="Update Selected Customer" />
-        <Button fx:id="customerAddButton" layoutX="191.0" layoutY="181.0" mnemonicParsing="false" onAction="#customerAddButtonAction" text="Add Customer" />
+        <Button fx:id="customerDeleteButton" layoutX="72.0" layoutY="264.0" mnemonicParsing="false" onAction="#customerDeleteButtonAction" text="Delete Selected Customer" />
+        <Button fx:id="customerUpdateButton" layoutX="69.0" layoutY="221.0" mnemonicParsing="false" onAction="#customerUpdateButtonAction" text="Update Selected Customer" />
+        <Button fx:id="customerAddButton" layoutX="102.0" layoutY="178.0" mnemonicParsing="false" onAction="#customerAddButtonAction" text="Add Customer" />
       <ButtonBar layoutX="333.0" layoutY="730.0">
          <buttons>
               <Button fx:id="apptAddButton" mnemonicParsing="false" onAction="#apptAddButtonAction" text="Add Customer Appointment" />
@@ -73,7 +74,7 @@
         <RadioButton fx:id="apptWeekRadioButton" layoutX="769.0" layoutY="695.0" mnemonicParsing="false" onAction="#apptWeekRadioAction" text="By Week" toggleGroup="$toggleGroup" />
         <RadioButton fx:id="apptAllRadioButton" layoutX="597.0" layoutY="695.0" mnemonicParsing="false" onAction="#apptAllRadioAction" text="All" toggleGroup="$toggleGroup" />
         <Button fx:id="apptReportsButton" layoutX="351.0" layoutY="691.0" mnemonicParsing="false" onAction="#apptReportsButtonAction" text="Go To Reports Screen" />
-        <TextField fx:id="mainCustomerSearchField" layoutX="141.0" layoutY="137.0" onAction="#mainCustomerSearchAction" prefHeight="26.0" prefWidth="192.0" promptText="Search By Customer Name Or ID" />
+        <TextField fx:id="mainCustomerSearchField" layoutX="52.0" layoutY="134.0" onAction="#mainCustomerSearchAction" prefHeight="26.0" prefWidth="192.0" promptText="Search By Customer Name Or ID" />
         <TextField fx:id="mainApptSearchField" layoutX="885.0" layoutY="691.0" onAction="#mainApptSearchAction" prefHeight="26.0" prefWidth="206.0" promptText="Search By Appointment Title Or ID" />
       <Label fx:id="mainTypeLabel" layoutX="878.0" layoutY="83.0" />
       <Button fx:id="mainBackLoginButton" layoutX="89.0" layoutY="730.0" mnemonicParsing="false" onAction="#mainBackLoginButtonAction" text="Back To Login" />

@@ -1,5 +1,7 @@
 package model;
 
+import helper.ListManager;
+
 /**
  * Class for user data structure
  */
@@ -26,6 +28,10 @@ public class User {
      */
     public User(int userId) {
         this.userId = userId;
+    }
+
+    public User() {
+
     }
 
     /**
@@ -84,4 +90,9 @@ public class User {
     public String toString() {
         return String.valueOf(userId);
     }
+
+    public String message() {
+        return "No User Type Selected";
+    }
+
 }

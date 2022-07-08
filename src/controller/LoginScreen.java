@@ -4,7 +4,6 @@ package controller;
 import database.AppointmentDB;
 import helper.Dialogs;
 import helper.FileOutput;
-import helper.InputValidation;
 import helper.JDBC;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -14,9 +13,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import model.BusinessCustomer;
-import model.Customer;
-import model.MarketingCustomer;
 
 import java.net.URL;
 import java.time.ZoneId;
