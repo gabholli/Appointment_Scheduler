@@ -17,7 +17,9 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import model.Appointment;
+import model.BusinessCustomer;
 import model.Customer;
+import model.MarketingCustomer;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -168,6 +170,8 @@ public class MainScreen implements Initializable {
     public TextField mainCustomerSearchField;
     public TextField mainApptSearchField;
 
+    public Label mainTypeLabel;
+
     /**
      * Method for initializing main screen
      *
@@ -206,6 +210,23 @@ public class MainScreen implements Initializable {
         apptEndDateTimeCol.setCellValueFactory(new PropertyValueFactory<>("end"));
         apptCustomerIdCol.setCellValueFactory(new PropertyValueFactory<>("customerId"));
         apptUserIdCol.setCellValueFactory(new PropertyValueFactory<>("userId"));
+
+    }
+
+    public void receiveFromLogin(int i) {
+
+        Customer customer = new Customer();
+        Customer businessCustomer = new BusinessCustomer();
+        Customer marketingCustomer = new MarketingCustomer();
+
+        if (i == 0) {
+            mainTypeLabel.setText(marketingCustomer.message());
+        }
+        else if (i == 1) {
+            mainTypeLabel.setText(businessCustomer.message());
+        } else {
+            mainTypeLabel.setText(customer.message());
+        }
 
     }
 
@@ -541,4 +562,5 @@ public class MainScreen implements Initializable {
         mainCustomerSearchField.setText(Integer.toString(appointmentId.size()));
         mainCustomerSearchField.setText((""));
     }
+
 }

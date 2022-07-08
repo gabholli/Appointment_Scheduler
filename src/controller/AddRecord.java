@@ -13,8 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import model.Country;
-import model.Division;
+import model.*;
 
 import java.io.IOException;
 import java.net.URL;
@@ -113,7 +112,7 @@ public class AddRecord implements Initializable {
                 alert.setContentText("Please confirm.");
                 Optional<ButtonType> result = alert.showAndWait();
                 if (result.isPresent() && result.get() == ButtonType.OK) {
-                    CustomerDB.addRecord(name, address, postalCode, phone, divisionId);
+                    CustomerDB.addRecord(name, address, postalCode, phone, divisionId);;
                     Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/MainScreen.fxml")));
                     Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root, 1200, 800);

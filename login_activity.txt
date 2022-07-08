@@ -162,3 +162,22 @@ A successful login attempt occurred for Username: test on 2022-07-07 at 20:10:40
 A successful login attempt occurred for Username: test on 2022-07-07 at 20:14:20
 A successful login attempt occurred for Username: test on 2022-07-07 at 20:20:47
 A successful login attempt occurred for Username: test on 2022-07-07 at 20:48:46
+A successful login attempt occurred for Username: test on 2022-07-07 at 23:44:23
+A successful login attempt occurred for Username: test on 2022-07-08 at 00:29:17
+A successful login attempt occurred for Username: test on 2022-07-08 at 00:51:17
+A successful login attempt occurred for Username: test on 2022-07-08 at 00:51:31
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:05:06
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:16:01
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:16:39
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:16:53
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:23:34
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:23:54
+A failed login attempt occurred for an unknown user on 2022-07-08 at 01:24:05
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:24:09
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:25:58
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:26:09
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:27:31
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:27:59
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:28:34
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:28:48
+A successful login attempt occurred for Username: test on 2022-07-08 at 01:29:01

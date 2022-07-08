@@ -14,6 +14,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import model.BusinessCustomer;
+import model.Customer;
+import model.MarketingCustomer;
 
 import java.net.URL;
 import java.time.ZoneId;
@@ -63,6 +66,9 @@ public class LoginScreen implements Initializable {
      * Text field for entering password
      */
     public TextField loginPasswordTxtField;
+    public RadioButton loginBusinessRadioButton;
+    public RadioButton loginMarketingRadioButton;
+    public ToggleGroup loginToggle;
     /**
      * Variable for using resource bundle
      */
@@ -135,13 +141,27 @@ public class LoginScreen implements Initializable {
             FileOutput.writeToFileSuccess(userName);
             Dialogs.displayAlert(Alert.AlertType.INFORMATION, bundle.getString("LoginSuccess"), bundle.getString("LoginSuccess"));
             AppointmentDB.appointmentCheck();
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/MainScreen.fxml")));
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation((getClass().getResource("/view/MainScreen.fxml")));
+            Parent tableViewParent = loader.load();
+
+            Scene tableViewScene = new Scene(tableViewParent);
+
+            MainScreen controller = loader.getController();
+            controller.receiveFromLogin(loginToggle.getToggles().indexOf(loginToggle.getSelectedToggle()));
+
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root, 1200, 800);
-            stage.setScene(scene);
+            stage.setScene(tableViewScene);
             stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
             stage.centerOnScreen();
             stage.show();
+//            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/MainScreen.fxml")));
+//            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+//            Scene scene = new Scene(root, 1200, 800);
+//            stage.setScene(scene);
+//            stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
+//            stage.centerOnScreen();
+//            stage.show();
         }
     }
 
@@ -159,5 +179,15 @@ public class LoginScreen implements Initializable {
             Stage stage = (Stage) loginCancelButton.getScene().getWindow();
             stage.close();
         }
+    }
+
+
+    public void loginMarketingRadioButtonAction(ActionEvent actionEvent) {
+        System.out.println(loginToggle.getToggles().indexOf(loginToggle.getSelectedToggle()));
+    }
+
+    public void loginBusinessRadioButtonAction(ActionEvent actionEvent) {
+        System.out.println(loginToggle.getToggles().indexOf(loginToggle.getSelectedToggle()));
+
     }
 }

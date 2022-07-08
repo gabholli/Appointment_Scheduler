@@ -9,7 +9,12 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
+import model.BusinessCustomer;
+import model.Customer;
+import model.MarketingCustomer;
 
 import java.util.Locale;
 import java.util.Objects;
@@ -50,5 +55,6 @@ public class Main extends Application {
 
         JDBC.closeConnection();
     }
+
 
 }

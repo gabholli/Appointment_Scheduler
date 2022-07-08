@@ -1,5 +1,7 @@
 package model;
 
+import database.CustomerDB;
+
 /**
  * Class for customer data structure
  */
@@ -74,6 +76,10 @@ public class Customer {
         this.divisionName = divisionName;
         this.countryId = countryId;
         this.divisionId = divisionId;
+    }
+
+    public Customer() {
+
     }
 
     /**
@@ -227,6 +233,10 @@ public class Customer {
     @Override
     public String toString() {
         return String.valueOf(customerId);
+    }
+
+    public String message() {
+        return "No Customer Type Selected";
     }
 
 }
