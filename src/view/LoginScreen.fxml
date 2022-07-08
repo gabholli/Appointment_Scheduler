@@ -16,19 +16,19 @@
         <TextField fx:id="loginPasswordTxtField" alignment="BASELINE_LEFT" layoutX="277.0" layoutY="166.0" />
         <Label fx:id="zoneIDLabel" layoutX="129.0" layoutY="205.0" text="Zone ID" />
         <Button fx:id="loginSignInButton" alignment="CENTER_RIGHT" layoutX="201.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginSignInAction" text="Sign In" />
-        <Label fx:id="zoneIdDisplayLabel" layoutX="280.0" layoutY="205.0" prefHeight="18.0" prefWidth="160.0" />
+        <Label fx:id="zoneIdDisplayLabel" contentDisplay="CENTER" layoutX="278.0" layoutY="204.0" prefHeight="18.0" prefWidth="150.0" />
         <Button fx:id="loginCancelButton" alignment="CENTER_RIGHT" layoutX="337.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginCancelAction" text="Cancel" />
         <Label id="loginTitle" fx:id="loginTopLabel" alignment="CENTER" layoutX="231.0" layoutY="53.0" text="Scheduling System">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-      <RadioButton fx:id="loginMarketingRadioButton" layoutX="329.0" layoutY="87.0" mnemonicParsing="false" onAction="#loginMarketingRadioButtonAction" text="Marketing">
-         <toggleGroup>
-            <ToggleGroup fx:id="loginToggle" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton fx:id="loginBusinessRadioButton" layoutX="227.0" layoutY="87.0" mnemonicParsing="false" onAction="#loginBusinessRadioButtonAction" text="Business" toggleGroup="$loginToggle" />
-      <Label layoutX="129.0" layoutY="87.0" text="Type" />
+        <RadioButton fx:id="loginMarketingRadioButton" layoutX="329.0" layoutY="87.0" mnemonicParsing="false" onAction="#loginMarketingRadioButtonAction" text="Marketing">
+            <toggleGroup>
+                <ToggleGroup fx:id="loginToggle" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="loginBusinessRadioButton" layoutX="227.0" layoutY="87.0" mnemonicParsing="false" onAction="#loginBusinessRadioButtonAction" text="Business" toggleGroup="$loginToggle" />
+        <Label layoutX="129.0" layoutY="87.0" text="Type" />
     </children>
 </AnchorPane>

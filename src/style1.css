@@ -1,5 +1,5 @@
 .root {
-	-fx-background-color:"skyblue";
+	-fx-background-color:"lightblue";
 }
 
 .label {
@@ -12,6 +12,10 @@
 	-fx-font-family:"Times New Roman";
 }
 
+.radio-button {
+	-fx-font-family:"Lucida Console";
+}
+
 .table-column {
 	-fx-font-family:"Lucida Console";
 	-fx-font-size: 10;
@@ -20,4 +24,6 @@
 #loginTitle {
 	/*-fx-font-family:"Courier New"*/
 }
+
+
 
