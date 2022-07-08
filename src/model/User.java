@@ -22,6 +22,12 @@ public class User {
      */
     private String password;
 
+    public User(int userId, String userName, String password) {
+        this.userId = userId;
+        this.userName = userName;
+        this.password = password;
+    }
+
     /**
      * Constructor for User class
      * @param userId The user ID

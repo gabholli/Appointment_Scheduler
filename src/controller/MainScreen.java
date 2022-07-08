@@ -592,4 +592,5 @@ public class MainScreen implements Initializable {
         mainCustomerSearchField.setText((""));
     }
 
+
 }
