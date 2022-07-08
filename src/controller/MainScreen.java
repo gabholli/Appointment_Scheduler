@@ -168,9 +168,17 @@ public class MainScreen implements Initializable {
      * Text Field for search for customers in records table
      */
     public TextField mainCustomerSearchField;
+    /**
+     * Text Field for search for appointments in appointments table
+     */
     public TextField mainApptSearchField;
-
+    /**
+     * Label to show type of customer logged in
+     */
     public Label mainTypeLabel;
+    /**
+     * Button used to go back to login screen
+     */
     public Button mainBackLoginButton;
 
     /**
@@ -214,6 +222,10 @@ public class MainScreen implements Initializable {
 
     }
 
+    /**
+     * Method for receiving data from login screen toggle group
+     * @param i Parameter used to retrieve index from login screen toggle group
+     */
     public void receiveFromLogin(int i) {
 
         Customer customer = new Customer();

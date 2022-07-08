@@ -66,8 +66,17 @@ public class LoginScreen implements Initializable {
      * Text field for entering password
      */
     public TextField loginPasswordTxtField;
+    /**
+     * Radio button to select oneself as business customer
+     */
     public RadioButton loginBusinessRadioButton;
+    /**
+     * Radio button to select oneself as marketing customer
+     */
     public RadioButton loginMarketingRadioButton;
+    /**
+     * Toggle group for radio buttons in login screen
+     */
     public ToggleGroup loginToggle;
     /**
      * Variable for using resource bundle
