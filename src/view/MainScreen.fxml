@@ -45,8 +45,8 @@
       <ButtonBar layoutX="333.0" layoutY="730.0">
          <buttons>
               <Button fx:id="apptAddButton" mnemonicParsing="false" onAction="#apptAddButtonAction" text="Add Customer Appointment" />
-              <Button fx:id="apptUpdateButton" mnemonicParsing="false" onAction="#apptUpdateButtonAction" text="Update Customer Appointment" />
               <Button fx:id="apptDeleteButton" mnemonicParsing="false" onAction="#apptDeleteButtonAction" text="Delete Customer Appointment" />
+              <Button fx:id="apptUpdateButton" mnemonicParsing="false" onAction="#apptUpdateButtonAction" text="Update Customer Appointment" />
          </buttons>
       </ButtonBar>
         <Label fx:id="recordsTopLabel" layoutX="564.0" layoutY="83.0" text="Records" textAlignment="CENTER">
@@ -76,5 +76,6 @@
         <TextField fx:id="mainCustomerSearchField" layoutX="141.0" layoutY="137.0" onAction="#mainCustomerSearchAction" prefHeight="26.0" prefWidth="192.0" promptText="Search By Customer Name Or ID" />
         <TextField fx:id="mainApptSearchField" layoutX="885.0" layoutY="691.0" onAction="#mainApptSearchAction" prefHeight="26.0" prefWidth="206.0" promptText="Search By Appointment Title Or ID" />
       <Label fx:id="mainTypeLabel" layoutX="878.0" layoutY="83.0" />
+      <Button fx:id="mainBackLoginButton" layoutX="89.0" layoutY="730.0" mnemonicParsing="false" onAction="#mainBackLoginButtonAction" text="Back To Login" />
     </children>
 </AnchorPane>

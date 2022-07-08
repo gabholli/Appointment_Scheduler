@@ -171,6 +171,7 @@ public class MainScreen implements Initializable {
     public TextField mainApptSearchField;
 
     public Label mainTypeLabel;
+    public Button mainBackLoginButton;
 
     /**
      * Method for initializing main screen
@@ -419,6 +420,25 @@ public class MainScreen implements Initializable {
         stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
         stage.centerOnScreen();
         stage.show();
+    }
+
+    public void mainBackLoginButtonAction(ActionEvent actionEvent) throws IOException {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Go Back To Login Screen");
+        alert.setHeaderText("Are You Sure You Want To Go Back?");
+        alert.setContentText("Return To Login Screen?");
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.isPresent() && result.get() == ButtonType.OK) {
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/LoginScreen.fxml")));
+            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            Scene scene = new Scene(root, 600, 400);
+            stage.setScene(scene);
+            stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
+            stage.setTitle("Scheduling System");
+            stage.centerOnScreen();
+            stage.show();
+        }
     }
 
     /**
