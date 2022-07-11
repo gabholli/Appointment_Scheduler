@@ -6,6 +6,7 @@
         <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="C868" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PATH_TO_FX$/javafx-swt.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PATH_TO_FX$/javafx.web.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PATH_TO_FX$/javafx.base.jar" path-in-jar="/" />
@@ -14,7 +15,6 @@
       <element id="extracted-dir" path="$PATH_TO_FX$/javafx.swing.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PATH_TO_FX$/javafx.controls.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PATH_TO_FX$/javafx.graphics.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar" path-in-jar="/" />
       <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.1_windows-x64_bin-sdk/javafx-sdk-17.0.1/bin/api-ms-win-core-console-l1-1-0.dll" />
       <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.1_windows-x64_bin-sdk/javafx-sdk-17.0.1/bin/api-ms-win-core-console-l1-2-0.dll" />
       <element id="file-copy" path="$USER_HOME$/Downloads/openjfx-17.0.1_windows-x64_bin-sdk/javafx-sdk-17.0.1/bin/api-ms-win-core-datetime-l1-1-0.dll" />

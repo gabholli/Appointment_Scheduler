@@ -344,7 +344,6 @@ public class MainScreen implements Initializable {
         Scene scene = new Scene(root, 400, 400);
         stage.setScene(scene);
         stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
-        stage.setTitle("Add Customer Information");
         stage.centerOnScreen();
         stage.show();
     }
@@ -425,7 +424,6 @@ public class MainScreen implements Initializable {
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root, 400, 600);
         stage.setScene(scene);
-        stage.setTitle("Add Appointment Information");
         stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
         stage.centerOnScreen();
         stage.show();
@@ -444,7 +442,6 @@ public class MainScreen implements Initializable {
             Scene scene = new Scene(root, 600, 400);
             stage.setScene(scene);
             stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
-            stage.setTitle("Scheduling System");
             stage.centerOnScreen();
             stage.show();
         }
@@ -544,7 +541,6 @@ public class MainScreen implements Initializable {
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         Scene scene = new Scene(root, 800, 700);
         stage.setScene(scene);
-        stage.setTitle("Reports");
         stage.centerOnScreen();
         stage.getScene().getStylesheets().add(Objects.requireNonNull(getClass().getResource("/style1.css")).toExternalForm());
         stage.show();

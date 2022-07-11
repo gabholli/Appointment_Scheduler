@@ -56,7 +56,7 @@ Directions For Running The Program:
 
 - On Login Screen, type appropriate credentials to login
 
-- Click Sign In button to sign into application, or click Cancel to exit
+- Click Sign In button to sign in to application, or click Cancel to exit
 
 - Upon signing in, the main screen appears with two tables. The top table
   is for customer records. The bottom table is for customer appointments
@@ -113,7 +113,7 @@ Directions For Running The Program:
     three different reports
   
      - The first report allows the user to filter appointments by the associated
-       contact. Select the desired contact from the drop down menu and the the
+       contact. Select the desired contact from the drop-down menu and the
        table will automatically sort
     
      - The second report allows the user to see how many appointments are available,
