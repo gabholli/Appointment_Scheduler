@@ -195,4 +195,5 @@ public class LoginScreen implements Initializable {
         System.out.println(loginToggle.getToggles().indexOf(loginToggle.getSelectedToggle()));
 
     }
+
 }
