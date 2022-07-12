@@ -23,16 +23,16 @@
                 onAction="#updateButtonAction" text="Update"/>
         <Button fx:id="updateApptCancelButton" layoutX="282.0" layoutY="487.0" mnemonicParsing="false"
                 onAction="#addCancelButtonAction" text="Cancel"/>
-        <Label layoutX="65.0" layoutY="105.0" text="Appointment_ID"/>
+        <Label layoutX="65.0" layoutY="105.0" text="Appointment ID"/>
         <TextField fx:id="updateApptIdTextField" layoutX="185.0" layoutY="97.0"/>
         <ComboBox fx:id="comboEnd" layoutX="183.0" layoutY="387.0" onAction="#initializeEnd" prefWidth="150.0"/>
         <ComboBox fx:id="comboStart" layoutX="183.0" layoutY="355.0" onAction="#initializeStart" prefWidth="150.0"/>
         <Label layoutX="67.0" layoutY="230.0" text="Type"/>
         <Label layoutX="67.0" layoutY="359.0" text="Start Time"/>
         <Label layoutX="67.0" layoutY="391.0" text="End Time"/>
-        <Label layoutX="67.0" layoutY="421.0" text="Customer_ID"/>
+        <Label layoutX="67.0" layoutY="421.0" text="Customer ID"/>
         <TextField fx:id="updateApptTypeTextField" layoutX="184.0" layoutY="226.0"/>
-        <Label layoutX="67.0" layoutY="455.0" text="User_ID"/>
+        <Label layoutX="67.0" layoutY="455.0" text="User ID"/>
         <ComboBox fx:id="comboContact" layoutX="183.0" layoutY="268.0" onAction="#initializeContact" prefWidth="150.0"/>
         <ComboBox fx:id="comboCustomerId" layoutX="183.0" layoutY="417.0" prefWidth="150.0"/>
         <ComboBox fx:id="comboUserId" layoutX="183.0" layoutY="451.0" prefWidth="150.0"/>

@@ -97,6 +97,10 @@ public class User {
         return String.valueOf(userId);
     }
 
+    /**
+     * Method used to display message in main screen label if no radio button selected in login screen
+     * @return Returns indicated string
+     */
     public String message() {
         return "No User Type Selected";
     }
