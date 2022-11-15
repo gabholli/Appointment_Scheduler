@@ -22,7 +22,7 @@ Gabrial Hollifield
 
 Author Contact Information:
 
-Email: gabholli@wgu.edu
+Email: gholl467@gmail.com
 
 
 Application Version:
