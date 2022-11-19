@@ -5,7 +5,7 @@ Appointment Scheduling System
 
 Purpose of Program:
 
-To fulfill requirements for a global consulting organization
+To fulfill requirements for an imaginary global consulting organization
 that conducts business in multiple languages. 
 
 The organization possesses main offices in the United States,
@@ -17,7 +17,7 @@ and adding both customers and associated appointments.
 
 Author of Program:
 
-Gabrial Hollifield
+Gabe Hollifield
 
 
 Author Contact Information:
@@ -52,7 +52,7 @@ JavaFX-SDK-17.0.1
 
 Directions For Running The Program:
 
-- Launch Application
+- Launch application within IDE
 
 - On Login Screen, type appropriate credentials to login
 
@@ -121,8 +121,7 @@ Directions For Running The Program:
        the types found within that month, and the number of appointments found will
        show
 
-     - (This report is the report of my choice for rubric requirement A3F)
-       The third report allows the user to see how many unique customers are in the
+     - The third report allows the user to see how many unique customers are in the
        scheduling system(sorted by customer name). Simply click on the Show Number
        Of Unique Customers button to generate the report results
 
