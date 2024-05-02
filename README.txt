@@ -1,10 +1,7 @@
-Title of Program:
-
+# Project Title
 Appointment Scheduling System
 
-
-Purpose of Program:
-
+## Description
 To fulfill requirements for an imaginary global consulting organization
 that conducts business in multiple languages. 
 
@@ -14,44 +11,9 @@ This application helps in accessing that database in an easy-
 to-use graphical user interface, allowing for updating
 and adding both customers and associated appointments.
 
+## Getting Started
 
-Author of Program:
-
-Gabe Hollifield
-
-
-Author Contact Information:
-
-Email: gholl467@gmail.com
-
-
-Application Version:
-
-1.0
-
-
-Date:
-
-05/11/2022
-
-
-IDE Version Number:
-
-IntelliJ Community 2021.1.3
-
-
-Full JDK Version:
-
-Java JDK 17.0.1
-
-
-JavaFX Version:
-
-JavaFX-SDK-17.0.1
-
-
-Directions For Running The Program:
-
+### Executing program
 - Launch application within IDE
 
 - On Login Screen, type appropriate credentials to login
@@ -125,7 +87,10 @@ Directions For Running The Program:
        scheduling system(sorted by customer name). Simply click on the Show Number
        Of Unique Customers button to generate the report results
 
+command to run if program contains helper info
+## Authors
+Gabe Hollifield
 
-MYSQL Connector Driver Version Number:
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
-mysql-connector-java-8.0.25
