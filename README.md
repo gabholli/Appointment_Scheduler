@@ -87,7 +87,6 @@ and adding both customers and associated appointments.
        scheduling system(sorted by customer name). Simply click on the Show Number
        Of Unique Customers button to generate the report results
 
-command to run if program contains helper info
 ## Authors
 Gabe Hollifield
 
